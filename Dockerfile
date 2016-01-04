@@ -3,13 +3,13 @@ FROM nimmis/java:openjdk-8-jdk
 MAINTAINER skardoska <koen253janssen@gmail.com>
 
 #Create Shared volume for Minecraft Server Files
-VOLUME ["/data/minecraft"]
+VOLUME ["/minecraft"]
 
 #non-interactive installation
 ENV DEBIAN_FRONTEND noninteractive
 
 #default directory for SPIGOT-server
-ENV SPIGOT_HOME /data/minecraft
+ENV SPIGOT_HOME /minecraft
 
 ADD start.sh /start.sh
 
