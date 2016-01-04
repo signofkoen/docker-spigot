@@ -2,9 +2,6 @@ FROM nimmis/java:openjdk-8-jdk
 
 MAINTAINER skardoska <koen253janssen@gmail.com>
 
-#Create Shared volume for Minecraft Server Files
-VOLUME ["/minecraft"]
-
 #non-interactive installation
 ENV DEBIAN_FRONTEND noninteractive
 
